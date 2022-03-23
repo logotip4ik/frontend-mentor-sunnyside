@@ -42,6 +42,14 @@
       </li>
     {/each}
   </ul>
+
+  <div class="footer__attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+      Frontend Mentor
+    </a><br />
+    Coded by <a href="https://bogdankostyuk.xyz">Bogdan Kostyuk</a>.
+  </div>
 </footer>
 
 <style lang="scss">
@@ -50,6 +58,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: relative;
 
     color: hsl(166, 45%, 32%);
 
@@ -92,6 +102,23 @@
       max-width: 165px;
 
       list-style-type: none;
+    }
+
+    &__attribution {
+      position: absolute;
+      left: 50%;
+      bottom: 0.125rem;
+
+      font-size: 0.75rem;
+      text-align: center;
+
+      width: 100%;
+
+      transform: translate(-50%, -50%);
+
+      a {
+        color: currentColor;
+      }
     }
   }
 </style>
